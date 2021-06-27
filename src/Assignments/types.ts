@@ -5,10 +5,10 @@ export interface IAssignment {
 
 interface IAssignmentItem {
   type: string;
-  product: IProduct;
+    product: IProduct;
 }
 
-interface IProduct {
+export interface IProduct {
   id: number;
   title: string;
   image: string;
@@ -17,13 +17,7 @@ interface IProduct {
   playable: boolean;
   minigame: any;
   badge: any;
-  type: IProductType;
-}
-
-interface IProductType {
-  label: string;
-  description: string;
-  open_with: 'href' | 'launcher';
+  type: Record<string,any>;
 }
 
 export interface ILeaderBoard {
