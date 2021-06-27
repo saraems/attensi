@@ -91,8 +91,6 @@ const LeaderBoardDialog: FC = () => {
 
   const handleClose = () => dispatch(assignmentsActions.closeProductDialog());
 
-  console.log('leaderBoardEntries', leaderBoardEntries);
-
   return (
     <ConfirmDialog
       open={isOpen}
@@ -120,8 +118,8 @@ const LeaderBoardDialog: FC = () => {
                   {leaderBoardEntries.map((record: any, index: number) => (
                     <Record>
                       <UsernameWrapper>
-                        {index + 1}. <Username>{record.user.first_name}</Username>{' '}
-                        <Avatar alt="Remy Sharp" src={record.user.image} className={classes.small} />
+                        {index + 1}. <Username>{record.user.first_name}</Username>
+                        <Avatar alt={`${record.user.first_name} avatar.`} src={record.user.image} className={classes.small} />
                       </UsernameWrapper>
                       <span>{record.value}</span>
                     </Record>
