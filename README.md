@@ -1,6 +1,3 @@
-SOME DOCUMENTATION 
-error postcss@8.2.6: The engine "node" is incompatible with this module. Expected version "^10 || ^12 || >=14". Got "13.7.0"
-
 ## Instructions for installing and starting the application
 
 **Required:** Node.js expected version "^10 || ^12 || >=14"<br />
@@ -37,8 +34,6 @@ Styled-components tool which allows to create css in .js, .ts and tsx files as J
 
 - **lodash** <br />
 Lodash provides many utility functions for common programming tasks. It makes coding in JavaScript easier and cleaner. Instead of writing common functions, again and again, the task can be accomplished with a single line of code. Within this project it contributed to filtering and sorting products list. 
-
- <br /> Rest of the application's dependencies are builded-in and provided by default in react-app (for e.g testing-libraries). 
 
 ## Code description
 
