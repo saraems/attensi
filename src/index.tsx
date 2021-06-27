@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Product from './Products';
+import { store } from './store/store';
+import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
 import { StylesProvider } from '@material-ui/core/styles';
+import AssignmentsPage from './Assignments';
 
 ReactDOM.render(
   <React.StrictMode>
-    <StylesProvider injectFirst>
-      <Product />
-    </StylesProvider>
+    <Provider store={store}>
+      <StylesProvider injectFirst>
+        <AssignmentsPage />
+      </StylesProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
